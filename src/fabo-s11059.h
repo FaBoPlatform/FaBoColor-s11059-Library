@@ -24,14 +24,12 @@
 #define S11059_CTRL_INT_IME_22_4MS 0b10
 #define S11059_CTRL_INT_IME_179_2MS 0b11
 
-class s11059
+class FaBoColor
 {
 public:
-  void configuration(void);
-  void readRGBI(unsigned int *r, unsigned int *g, unsigned int *b, unsigned int *i);
+	void configuration(void);
+	void readRGBI(unsigned int *r, unsigned int *g, unsigned int *b, unsigned int *i);
 private:
-  void readI2c(byte register_addr, int num, byte *buf);
-  void writeI2c(byte register_addr, byte value);
+	void readI2c(byte register_addr, int num, byte *buf);
+	void writeI2c(byte register_addr, byte value);
 };
-
-extern s11059 faboColor;

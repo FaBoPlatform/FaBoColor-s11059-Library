@@ -1,10 +1,7 @@
 #include "fabo-s11059.h"
 #include "Wire.h"
 
-unsigned int r;
-unsigned int g;
-unsigned int b;
-unsigned int i;
+FaBoColor faboColor;
 
 void setup() {
   Serial.begin(9600); // シリアルの開始デバック用
@@ -12,7 +9,12 @@ void setup() {
 }
 
 void loop() {
-  
+
+  uint16_t r;
+  uint16_t g;
+  uint16_t b;
+  uint16_t i;
+
   faboColor.readRGBI(&r, &g, &b, &i);
   
   Serial.print("r: ");
@@ -24,5 +26,5 @@ void loop() {
   Serial.print(", i: ");
   Serial.println(i);
   
-  delay(500);
+  delay(1000);
 }
