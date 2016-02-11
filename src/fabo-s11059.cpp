@@ -1,6 +1,6 @@
 #include "fabo-s11059.h"
 
-void FaBoColor::readRGBI(unsigned int *r, unsigned int *g, unsigned int *b, unsigned int *i)
+void FaBoColor::readRGBI(uint16_t *r, uint16_t *g, uint16_t *b, uint16_t *i)
 {
   uint8_t length = 8;
   byte color_buff[8];

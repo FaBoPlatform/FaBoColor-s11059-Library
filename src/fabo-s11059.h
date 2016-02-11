@@ -28,7 +28,7 @@ class FaBoColor
 {
 public:
 	void configuration(void);
-	void readRGBI(unsigned int *r, unsigned int *g, unsigned int *b, unsigned int *i);
+	void readRGBI(uint16_t *r, uint16_t *g, uint16_t *b, uint16_t *i);
 private:
 	void readI2c(byte register_addr, int num, byte *buf);
 	void writeI2c(byte register_addr, byte value);
