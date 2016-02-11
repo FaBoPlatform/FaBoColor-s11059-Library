@@ -5,9 +5,9 @@ void s11059::readRGBI(unsigned int *r, unsigned int *g, unsigned int *b, unsigne
   uint8_t length = 8;
   byte color_buff[8];
   readI2c(S11059_RED_REG, length, color_buff);
-  *r = (((int)color_buff[1]) << 8) | color_buff[0];   
-  *g = (((int)color_buff[3]) << 8) | color_buff[2];
-  *b = (((int)color_buff[5]) << 8) | color_buff[4];
+  *r = (((int)color_buff[0]) << 8) | color_buff[1];   
+  *g = (((int)color_buff[2]) << 8) | color_buff[3];
+  *b = (((int)color_buff[4]) << 8) | color_buff[5];
   *i = (((int)color_buff[6]) << 8) | color_buff[7];
 }
 
