@@ -1,22 +1,23 @@
-# FaBoColor-S11059-Library
+# FaBoColor-s11059-Library
 
-# FaBoAmbientLight
+This is a library for FaBo #203 Color I2C Brick.
 
-This is a library for FaBo Color Brick.
+## FaBo Color I2C Brick
 
-# S11059
+[#203 Color I2C Brick](http://fabo.io/203.html)
 
-S11059 is color sensors.
+## S11059
 
-# Datasheet
+S11059 is color sensor.
+
+## S11059 Datasheet
 
 [S11059 Datasheet](http://www.hamamatsu.com/resources/pdf/ssd/s11059-02dt_etc_kpic1082j.pdf)
 
-# Releases
+## Releases
 
-1.0.0 Initial release.
+- 1.0.0 Initial release.
 
-# How to install.
+## How to install.
 
-[Installing Additional Arduino Libraries](https://www.arduino.cc/en/Guide/Libraries#toc3)
-# FaBoColor-s11059-Library
+[Installing Additional Arduino Libraries](https://www.arduino.cc/en/Guide/Libraries)
