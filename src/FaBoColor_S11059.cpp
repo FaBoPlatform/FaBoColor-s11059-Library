@@ -25,9 +25,9 @@ FaBoColor::FaBoColor(uint8_t addr) {
  @brief Begin Device
 */
 void FaBoColor::begin() {
-  setGain(S11059_GAIN_HIGH);
+  setGain(S11059_GAIN_LOW);
   setMode(S11059_MODE_FIXED);
-  setTime(S11059_CTRL_TIME_224M);
+  setTime(S11059_CTRL_TIME_1792M);
 }
 
 /**
